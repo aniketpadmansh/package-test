@@ -40,5 +40,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Test Package",
+  "main": "webpack.config.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniketpadmansh/package-test.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "aniket",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aniketpadmansh/package-test/issues"
+  },
+  "homepage": "https://github.com/aniketpadmansh/package-test#readme"
 }
