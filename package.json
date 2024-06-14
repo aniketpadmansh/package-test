@@ -41,7 +41,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "Test Package",
+  "description": "ABC react component",
   "main": "webpack.config.js",
   "devDependencies": {
     "@babel/preset-env": "^7.24.7",
@@ -55,7 +55,7 @@
     "url": "git+https://github.com/aniketpadmansh/package-test.git"
   },
   "keywords": [
-    "test"
+    "a b c component"
   ],
   "author": "aniket",
   "license": "MIT",
