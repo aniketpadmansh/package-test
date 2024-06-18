@@ -1,76 +1,43 @@
 {
-  "name": "a-b-c-react-component",
-  "version": "0.1.1",
-  "private": false,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "sass": "^1.77.5",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
-  },
+  "name": "sg-ui-gro",
+  "version": "1.0.8",
+  "description": "SG Design System",
+  "module": "./lib/index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "build:rollup": "rm -rf lib && rm -rf lib-esm && npx rollup -c && npx tsc --project tsconfig.build.json",
+    "build:webpack": ""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "description": "ABC react component",
-  "main": "src/index.ts",
+  "files": [
+    "lib"
+  ],
+  "author": "a",
+  "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
+    "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "babel-cli": "^6.26.0",
+    "@rollup/plugin-replace": "^5.0.7",
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
     "glob": "^10.4.1",
-    "mini-css-extract-plugin": "^2.9.0",
+    "rollup": "^2.79.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "sass": "^1.77.5",
+    "typescript": "^5.4.5"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aniketpadmansh/package-test.git"
-  },
-  "keywords": [
-    "a b c component"
-  ],
-  "author": "aniket",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aniketpadmansh/package-test/issues"
-  },
-  "homepage": "https://github.com/aniketpadmansh/package-test#readme"
+  "engines": {
+    "node": ">=18"
+  }
 }

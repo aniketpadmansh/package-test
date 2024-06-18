@@ -1,16 +1,40 @@
 {
+  "include": [
+    "src/*",
+    "src/components/ComponentB",
+    "src/components/ComponentA"
+  ],
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "jsx": "react",
-    "declaration": true,
-    "declarationDir": "dist/types",
-    "outDir": "dist",
-    "rootDir": "src",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "preserve",
+    "strict": true,
     "moduleResolution": "node",
+    "rootDirs": ["src"],
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "types": ["node", "react"],
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "declarationMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "@sg-ui": ["./lib"],
+      "@sg-ui/*": ["./lib/*"]
+    }
   },
-  "include": ["src"]
+  "exclude": [
+    "node_modules",
+    "lib",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx"
+  ]
 }
